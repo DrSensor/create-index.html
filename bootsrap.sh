@@ -8,7 +8,7 @@ echo "
  4) Turbo
  5) Flamethrower
  6) Partytown
-"
+" >&2
 read -p "what to uses? (1-4 …) " -a options
 
 for option in ${options[*]}; do
@@ -25,9 +25,10 @@ done
 pin_version=no
 read -p "pin version? (yes/no) " pin_version
 ######################################################
-echo "> CREATE index.html"
+echo $"> CREATE ${1:-[page].html}" >&2
 
-echo "<!DOCTYPE html>
+page=$"<!DOCTYPE html>
+
 $(for pkg in ${pkgs[*]}; do
 
   url=$"https://esm.run/$pkg@$(
@@ -44,6 +45,11 @@ $(for pkg in ${pkgs[*]}; do
 
 done)
 
-<!-- WRITE YOUR SINGLE_PAGE_APP HERE -->" > index.html
+<!-- WRITE YOUR SINGLE_PAGE_APP HERE -->"
+
+if [ -n "$1" ]
+  then echo "$page" > $1
+  else echo "$page"
+fi
 ######################################################
-echo "> DONE"
+echo "> DONE" >&2
