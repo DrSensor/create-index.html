@@ -1,4 +1,8 @@
+Require bat
+Require npm
+
 Output demo.webm
+Output demo.gif
 
 Set WindowBar Colorful
 Set Padding 2
