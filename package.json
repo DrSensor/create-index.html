@@ -1,0 +1,23 @@
+{
+  "name": "create-index.html",
+  "version": "1.0.0",
+  "description": "sIngLE-pAGE-aPp shOUld bE siNGle htML fiLe",
+  "bin": {
+    "create-index.html": "bootsrap.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrSensor/create-index.html.git"
+  },
+  "keywords": [
+    "htmx",
+    "alpine",
+    "index.html"
+  ],
+  "author": "Fahmi Akbar Wildana",
+  "license": "UPL-1.0",
+  "bugs": {
+    "url": "https://github.com/DrSensor/create-index.html/issues"
+  },
+  "homepage": "https://github.com/DrSensor/create-index.html#readme"
+}
