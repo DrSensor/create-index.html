@@ -1,10 +1,8 @@
 {
   "name": "@single-page/create",
-  "version": "1.0.0",
+  "version": "1.0.1970",
   "description": "sIngLE-pAGE-aPp shOUld bE siNGle htML fiLe",
-  "bin": {
-    "create-index.html": "bootsrap.sh"
-  },
+  "bin": "bootsrap.sh",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DrSensor/create-index.html.git"
